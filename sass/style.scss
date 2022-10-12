@@ -1,14 +1,19 @@
+
 // Overrides
-$grid-gutter-width:     40px !default;
-$border-radius-base:    4px !default;
+$grid-gutter-width: 40px !default;
+$border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary:       #de633a !default;
-$brand-secondary: 		#41454f !default;
-$brand-success:       #58ca7e !default;
-$brand-info:          #1784fb !default;
-$brand-warning:       #fed330 !default;
-$brand-danger:        #fb4f59 !default;
+// $brand-primary: #52d3aa !default;
+// $brand-secondary: #3f95ea !default;
+
+$brand-primary: #de633a !default;
+$brand-secondary: #41454f !default;
+$brand-success: #58ca7e !default;
+$brand-info: #1784fb !default;
+$brand-warning: #fed330 !default;
+$brand-danger: #fb4f59 !default;
+$brand-date-bg: #F7CA78 !default;
 
 $brand-white: #fff !default;
 $brand-black: #000 !default;
@@ -38,8 +43,7 @@ $font-secondary: 'Roboto', arial, sans-serif;;
 @mixin inline-block() {
 	display:-moz-inline-stack;
 	display:inline-block;
-//	zoom:1;
-    transform: scale(1);
+	transform: scale(1);
 	*display:inline;
 }
 @mixin border-radius($radius) {
@@ -462,6 +466,13 @@ p {
 		figure {
 			margin-bottom: 30px;
 		}
+    feature-image {
+      margin-bottom: 30px;
+      img {
+        margin: auto;
+        display: block;
+      }
+    }
 		h2 {
 			font-family: $font-primary;
 			font-size: 34px;
@@ -571,6 +582,11 @@ figure {
 		// font-style: italic;
 		color: lighten($brand-black, 60%);
 	}
+	figcaption-epic {
+		padding-top: 15px;
+		font-size: 0.6em;
+		color: lighten($brand-black, 40%);
+	}
 }
 
 #fh5co-offcanvas {
@@ -634,8 +650,6 @@ figure {
 		text-align: center;
 		float: left;
 		figure {
-			text-align: center;
-			display: block;
 			margin-bottom: 30px;
 		}
 		img {
@@ -677,6 +691,7 @@ figure {
 
 #fh5co-footer {
 	padding: 3em 0;
+	line-height: 1.2;
 	text-align: center;
 }
 
@@ -686,6 +701,134 @@ figure {
 .animate-box {
 	.js & {
 		opacity: 0;
+	}
+}
+
+.fh5co-heading {
+	&.padding-right {
+		padding-right: 1em;
+		@media screen and (max-width: $screen-sm) {
+			padding-right: 0em;
+		}
+	}
+	&.date-break {
+		position: relative;
+		text-align: center;
+		vertical-align: center;
+		background: $brand-date-bg;
+		font: bold;
+		font-size: 2.8em;
+		@media screen and (max-width: $screen-sm) {
+			font-size: 1.8em;
+		}
+	}
+}
+.fh5co-grid {
+	position: relative;
+	.fh5co-col-1,
+	.fh5co-col-2 {
+		width: 50%;
+		@media screen and (max-width: $screen-xs) {
+			width: 100%;
+		}
+		&.margintop {
+			margin-top: 29%;
+		}
+		img {
+			max-width: 100%;
+		}
+		.fh5co-item {
+			margin-bottom: .5em;
+			float: left;
+			width: 100%;
+			position: relative;
+
+			a {
+				position: relative;
+				display: block;
+				overflow: hidden;
+				&.image-popup {
+					h2 {
+						opacity: 0;
+						visibility: hidden;
+						@include transition(.9s);
+					}
+				}
+				.fh5co-item-text-wrap {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					@include transition(.9s);
+				}
+				.fh5co-item-text {
+					position: absolute;
+					z-index: 99;
+					text-align: center;
+					top: 50%;
+					width: 100%;
+					vertical-align: middle;
+					margin-top: -18px;
+					@media screen and (max-width: $screen-sm) {
+						margin-top: -12px;
+					}
+					h2 {
+						margin: 0;
+						padding: 0;
+						color: $brand-white;
+						font-family: $font-secondary;
+						font-size: 30px;
+						@media screen and (max-width: $screen-sm) {
+							font-size: 20px;
+						}
+					}
+				}
+				img {
+					-webkit-transform: scale(1.1);
+					-moz-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					-o-transform: scale(1.1);
+					transform: scale(1.1);
+					@include transition(.9s);
+				}
+				&:hover {
+					img {
+						-webkit-transform: scale(1.0);
+						-moz-transform: scale(1.0);
+						-ms-transform: scale(1.0);
+						-o-transform: scale(1.0);
+						transform: scale(1.0);
+					}
+					h2 {
+						background: rgba(0, 0, 0, 0);
+					}
+				}
+				&.image-popup {
+					&:hover {
+						h2 {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+	.fh5co-col-1 {
+		float: left;
+		padding-right: .25em;
+		@media screen and (max-width: $screen-xs) {
+			padding-right: 0em;
+		}
+	}
+	.fh5co-col-2 {
+		float: right;
+		padding-left: .25em;
+		@media screen and (max-width: $screen-xs) {
+			padding-left: 0em;
+		}
+
 	}
 }
 

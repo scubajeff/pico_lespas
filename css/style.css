@@ -541,7 +541,7 @@ figure figcaption-epic {
   position: relative; }
   .fh5co-grid .fh5co-col-1,
   .fh5co-grid .fh5co-col-2 {
-    width: 50%; }
+    width: 49%; }
     @media screen and (max-width: 480px) {
       .fh5co-grid .fh5co-col-1,
       .fh5co-grid .fh5co-col-2 {
@@ -558,6 +558,15 @@ figure figcaption-epic {
       float: left;
       width: 100%;
       position: relative; }
+      .fh5co-grid .fh5co-col-1 .fh5co-item .polaroid,
+      .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px; }
+      .fh5co-grid .fh5co-col-1 .fh5co-item .polaroid-caption,
+      .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid-caption {
+        text-align: center;
+        padding: 10px 20px; }
       .fh5co-grid .fh5co-col-1 .fh5co-item a,
       .fh5co-grid .fh5co-col-2 .fh5co-item a {
         position: relative;

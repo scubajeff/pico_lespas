@@ -415,12 +415,18 @@ p {
 
 figure figcaption {
   padding-top: 15px;
-  font-size: 14px;
-  color: #b3b3b3; }
+  color: #b3b3b3;
+  font-size: 1em; }
+  @media screen and (max-width: 992px) {
+    figure figcaption {
+      font-size: 0.8em; } }
 figure figcaption-epic {
   padding-top: 15px;
-  font-size: 0.6em;
-  color: gray; }
+  color: gray;
+  font-size: 1em; }
+  @media screen and (max-width: 992px) {
+    figure figcaption-epic {
+      font-size: 0.8em; } }
 
 #fh5co-offcanvas {
   background: #f5f5f5;
@@ -566,8 +572,13 @@ figure figcaption-epic {
         padding: 3%; }
       .fh5co-grid .fh5co-col-1 .fh5co-item .polaroid-caption,
       .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid-caption {
-        text-align: center;
-        padding: 10px 20px; }
+        text-align: left;
+        padding: 3% 6%;
+        font-size: 1em; }
+        @media screen and (max-width: 992px) {
+          .fh5co-grid .fh5co-col-1 .fh5co-item .polaroid-caption,
+          .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid-caption {
+            font-size: 0.8em; } }
       .fh5co-grid .fh5co-col-1 .fh5co-item a,
       .fh5co-grid .fh5co-col-2 .fh5co-item a {
         position: relative;

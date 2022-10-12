@@ -578,14 +578,20 @@ p {
 figure {
 	figcaption {
 		padding-top: 15px;
-		font-size: 14px;
-		// font-style: italic;
+    // font-style: italic;
 		color: lighten($brand-black, 60%);
+    font-size: 1em;
+    @media screen and (max-width: $screen-md) {
+      font-size: 0.8em;
+    }
 	}
 	figcaption-epic {
 		padding-top: 15px;
-		font-size: 0.6em;
-		color: lighten($brand-black, 40%);
+    color: lighten($brand-black, 40%);
+    font-size: 1em;
+    @media screen and (max-width: $screen-md) {
+      font-size: 0.8em;
+    }
 	}
 }
 
@@ -750,8 +756,12 @@ figure {
         padding: 3%;
       }
       .polaroid-caption {
-        text-align: center;
-        padding: 10px 20px;
+        text-align: left;
+        padding: 3% 6%;
+        font-size: 1em;
+        @media screen and (max-width: $screen-md) {
+          font-size: 0.8em;
+        }
       }
 			a {
 				position: relative;

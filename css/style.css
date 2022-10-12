@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 html {
-  background: #fff; }
+  background: #f5f5f5; }
 
 body {
   font-family: "Roboto", arial, sans-serif;
@@ -13,20 +13,20 @@ body {
   font-weight: 300;
   line-height: 1.8;
   color: #222;
-  background: #fff; }
+  background: #f5f5f5; }
   body.fh5co-overflow {
     overflow-x: auto; }
 
 ::-webkit-selection {
-  color: #fff;
+  color: #f5f5f5;
   background: #de633a; }
 
 ::-moz-selection {
-  color: #fff;
+  color: #f5f5f5;
   background: #de633a; }
 
 ::selection {
-  color: #fff;
+  color: #f5f5f5;
   background: #de633a; }
 
 a {
@@ -41,7 +41,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", times, serif;
-  color: #000; }
+  color: #1a1a1a; }
 
 p {
   margin-bottom: 30px; }
@@ -71,7 +71,7 @@ p {
 
 .btn-primary {
   background: #de633a;
-  color: #fff;
+  color: #f5f5f5;
   border: 2px solid #de633a; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #da5225 !important;
@@ -82,11 +82,11 @@ p {
     border: 2px solid #de633a; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
       background: #de633a;
-      color: #fff; }
+      color: #f5f5f5; }
 
 .btn-success {
   background: #58ca7e;
-  color: #fff;
+  color: #f5f5f5;
   border: 2px solid #58ca7e; }
   .btn-success:hover, .btn-success:focus, .btn-success:active {
     background: #45c46f !important;
@@ -97,11 +97,11 @@ p {
     border: 2px solid #58ca7e; }
     .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
       background: #58ca7e;
-      color: #fff; }
+      color: #f5f5f5; }
 
 .btn-info {
   background: #1784fb;
-  color: #fff;
+  color: #f5f5f5;
   border: 2px solid #1784fb; }
   .btn-info:hover, .btn-info:focus, .btn-info:active {
     background: #0477f4 !important;
@@ -112,11 +112,11 @@ p {
     border: 2px solid #1784fb; }
     .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
       background: #1784fb;
-      color: #fff; }
+      color: #f5f5f5; }
 
 .btn-warning {
   background: #fed330;
-  color: #fff;
+  color: #f5f5f5;
   border: 2px solid #fed330; }
   .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
     background: #fece17 !important;
@@ -127,11 +127,11 @@ p {
     border: 2px solid #fed330; }
     .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
       background: #fed330;
-      color: #fff; }
+      color: #f5f5f5; }
 
 .btn-danger {
   background: #fb4f59;
-  color: #fff;
+  color: #f5f5f5;
   border: 2px solid #fb4f59; }
   .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
     background: #fa3641 !important;
@@ -142,11 +142,11 @@ p {
     border: 2px solid #fb4f59; }
     .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
       background: #fb4f59;
-      color: #fff; }
+      color: #f5f5f5; }
 
 .btn-outline {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid #9a9a9a;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -224,14 +224,14 @@ p {
   #fh5co-header #fh5co-logo {
     text-align: center; }
     #fh5co-header #fh5co-logo a {
-      color: #000; }
+      color: #1a1a1a; }
       #fh5co-header #fh5co-logo a sup {
         font-size: 20px;
         top: -20px; }
   #fh5co-header #fh5co-logo-left {
     text-align: left; }
     #fh5co-header #fh5co-logo-left a {
-      color: #000; }
+      color: #1a1a1a; }
       #fh5co-header #fh5co-logo-left a sup {
         font-size: 18px;
         top: -20px; }
@@ -243,7 +243,7 @@ p {
   top: 50%;
   height: 50px;
   margin-top: -25px;
-  color: #000;
+  color: #1a1a1a;
   text-transform: uppercase;
   font-weight: bold;
   -webkit-transition: 0.5s;
@@ -267,14 +267,14 @@ p {
       top: 7px;
       position: relative;
       font-size: 30px;
-      color: #000; }
+      color: #1a1a1a; }
 
 .fh5co-post-prev {
   left: 0;
   margin-left: -25px; }
   .fh5co-post-prev:hover {
     margin-left: 10px;
-    color: #000; }
+    color: #1a1a1a; }
   @media screen and (max-width: 768px) {
     .fh5co-post-prev {
       margin-left: 15px;
@@ -285,7 +285,7 @@ p {
   margin-right: -25px; }
   .fh5co-post-next:hover {
     margin-right: 10px;
-    color: #000; }
+    color: #1a1a1a; }
   @media screen and (max-width: 768px) {
     .fh5co-post-next {
       margin-right: 15px;
@@ -337,10 +337,10 @@ p {
   .fh5co-post-entry article h2 {
     font-family: "Playfair Display", times, serif;
     font-size: 34px;
-    color: #000;
+    color: #1a1a1a;
     margin-bottom: 30px; }
     .fh5co-post-entry article h2 a {
-      color: #000; }
+      color: #1a1a1a; }
     @media screen and (max-width: 992px) {
       .fh5co-post-entry article h2 {
         font-size: 26px; } }
@@ -351,7 +351,7 @@ p {
   .fh5co-post-entry article .fh5co-meta {
     font-size: 16px;
     font-family: "Roboto", arial, sans-serif;
-    color: #999999;
+    color: #b3b3b3;
     margin-bottom: 20px;
     display: block; }
     @media screen and (max-width: 480px) {
@@ -377,9 +377,9 @@ p {
           display: block;
           font-size: 16px;
           font-style: normal;
-          color: gray; }
+          color: #9a9a9a; }
   .fh5co-post-entry article .fh5co-highlight {
-    border: 4px solid #f2f2f2;
+    border: 4px solid white;
     padding: 30px;
     width: 100%;
     margin-bottom: 30px; }
@@ -391,12 +391,12 @@ p {
     .fh5co-post-entry article .fh5co-highlight h4 {
       font-size: 14px;
       letter-spacing: 2px;
-      color: #b3b3b3;
+      color: #cdcdcd;
       text-transform: uppercase;
       font-family: "Roboto", arial, sans-serif; }
     .fh5co-post-entry article .fh5co-highlight p {
       font-family: "Playfair Display", times, serif;
-      color: #000;
+      color: #1a1a1a;
       font-size: 20px; }
 
 .fh5co-social {
@@ -411,19 +411,19 @@ p {
     .fh5co-social li a {
       font-size: 20px;
       padding: 4px;
-      color: #000; }
+      color: #1a1a1a; }
 
 figure figcaption {
   padding-top: 15px;
   font-size: 14px;
-  color: #999999; }
+  color: #b3b3b3; }
 figure figcaption-epic {
   padding-top: 15px;
   font-size: 0.6em;
-  color: #666666; }
+  color: gray; }
 
 #fh5co-offcanvas {
-  background: #fff;
+  background: #f5f5f5;
   position: fixed;
   top: 0;
   left: 0;
@@ -444,7 +444,7 @@ figure figcaption-epic {
     font-size: 30px;
     width: 30px;
     overflow: hidden;
-    color: #cccccc;
+    color: #e6e6e6;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -453,7 +453,7 @@ figure figcaption-epic {
         top: 5px; } }
     #fh5co-offcanvas .fh5co-close-offcanvas:hover {
       width: 85px;
-      color: #000; }
+      color: #1a1a1a; }
     #fh5co-offcanvas .fh5co-close-offcanvas > span {
       width: 100px;
       display: -moz-inline-stack;
@@ -496,7 +496,7 @@ figure figcaption-epic {
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #cccccc;
+    color: #e6e6e6;
     margin-bottom: 30px; }
   #fh5co-offcanvas .fh5co-menu {
     float: right; }
@@ -509,7 +509,7 @@ figure figcaption-epic {
         list-style: none;
         display: block; }
         #fh5co-offcanvas .fh5co-menu ul li a {
-          color: #000; }
+          color: #1a1a1a; }
 
 #fh5co-footer {
   padding: 3em 0;
@@ -606,7 +606,7 @@ figure figcaption-epic {
           .fh5co-grid .fh5co-col-2 .fh5co-item a .fh5co-item-text h2 {
             margin: 0;
             padding: 0;
-            color: #fff;
+            color: #f5f5f5;
             font-family: "Roboto", arial, sans-serif;
             font-size: 30px; }
             @media screen and (max-width: 768px) {

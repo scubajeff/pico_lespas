@@ -562,7 +562,8 @@ figure figcaption-epic {
       .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid {
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        padding: 3%; }
       .fh5co-grid .fh5co-col-1 .fh5co-item .polaroid-caption,
       .fh5co-grid .fh5co-col-2 .fh5co-item .polaroid-caption {
         text-align: center;

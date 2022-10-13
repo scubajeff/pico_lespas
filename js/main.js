@@ -42,11 +42,24 @@
 
 	};
 
+	var pauseVideoOutsideViewport = function() {
+		$(document).ready(function ($) {
+			$(window).scroll(function() {
+				$('video').each(function(){
+					if (!($(this).is(":in-viewport()"))) {
+						$(this)[0].pause();
+					}
+				});
+			});
+		});
+	};
+
 	// Document on load.
 	$(function(){
 
 		// Animations
 		contentWayPoint();
+		pauseVideoOutsideViewport();
 
 	});
 

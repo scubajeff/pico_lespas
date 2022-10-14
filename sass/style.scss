@@ -578,6 +578,7 @@ p {
 
 figure {
 	figcaption {
+    word-wrap: break-word;
 		padding-top: 15px;
     // font-style: italic;
 		color: lighten($brand-black, 60%);
@@ -587,6 +588,7 @@ figure {
     }
 	}
 	figcaption-epic {
+    word-wrap: break-word;
 		padding-top: 15px;
     color: lighten($brand-black, 40%);
     font-size: 1em;
@@ -660,6 +662,7 @@ figure {
       }
       .polaroid-caption {
         text-align: left;
+        word-wrap: break-word;
         padding: 3% 6%;
         font-size: 1em;
         @media screen and (max-width: $screen-md) {
@@ -759,12 +762,14 @@ figure {
 	padding-bottom: 40px;
 }
 .cp-l {
+  word-wrap: break-word;
 	padding-left: 50px;
 	@media screen and (max-width: $screen-md) {
 		padding-left: 15px;
 	}
 }
 .cp-r {
+  word-wrap: break-word;
 	padding-right: 50px;
 	@media screen and (max-width: $screen-md) {
 		padding-right: 15px;
@@ -822,14 +827,6 @@ figure {
 }
 .cd-timeline-block:last-child {
   margin-bottom: 0;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-block:first-child {
-    margin-top: 0;
-  }
-  .cd-timeline-block:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .cd-timeline-img {
@@ -894,6 +891,7 @@ figure {
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
+  word-wrap: break-word;
 }
 
 .cd-timeline-content::before {

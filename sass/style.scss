@@ -919,6 +919,9 @@ figure {
     font-size: 20px;
     font-size: 1.25rem;
   }
+  .cd-date {
+    color: $brand-primary;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
@@ -942,8 +945,8 @@ figure {
     width: max-content;
     left: 116%;
     top: 6px;
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 28px;
+    font-size: 1.8rem;
     padding: 0.5em;
     border-radius: 2px;
     background-color: $brand-primary;

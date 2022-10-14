@@ -942,7 +942,7 @@ figure {
   }
   .cd-timeline-content .cd-date {
     position: absolute;
-    width: auto;
+    width: max-content;
     left: 122%;
     top: 6px;
     font-size: 32px;

@@ -823,9 +823,6 @@ figure {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 1170px) {
-  .cd-timeline-block {
-    margin: 4em 0;
-  }
   .cd-timeline-block:first-child {
     margin-top: 0;
   }
@@ -943,7 +940,7 @@ figure {
   .cd-timeline-content .cd-date {
     position: absolute;
     width: max-content;
-    left: 122%;
+    left: 116%;
     top: 6px;
     font-size: 32px;
     font-size: 2rem;
@@ -967,7 +964,7 @@ figure {
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 116%;
     text-align: right;
   }
 }

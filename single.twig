@@ -61,6 +61,18 @@
 	<header id="fh5co-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 		<div class="container-fluid">
 			<div class="row">
+        {% if meta.social %}
+        <ul class="fh5co-social">
+        {% if meta.social == "cn" %}
+          <li><a href="https://service.weibo.com/share/share.php?url={{ pages["index"].meta.host }}{{ current_page.url }}&title={{ meta.title }}&pic={{ meta.featured|link }}&content=utf-8" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+          <li><a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ pages["index"].meta.host }}{{ current_page.url }}&title={{ meta.title }}&pics={{ meta.featured|link }}&summary={{ meta.description|striptags }}" target="_blank"><i class="icon-qzone"></i></a></li>
+          <li><a href="https://www.douban.com/recommend/?url={{ pages["index"].meta.host }}{{ current_page.url }}&title={{ meta.title }}" target="_blank"><i class="icon-douban"></i></a></li>
+        {% else %}
+          <li><a href="https://twitter.com/intent/tweet?url={{ pages["index"].meta.host }}{{ current_page.url }}&text={{ meta.title }}" target="_blank"><i class="icon-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ pages["index"].meta.host }}{{ current_page.url }}&t={{ meta.title }}" target="_blank"><i class="icon-facebook2"></i></a></li>
+        {% endif %}
+        </ul>
+        {% endif %}
 				<div class="col-lg-12 col-md-12 text-left">
 					<h1 id="fh5co-logo-left" itemprop="name"><a href="{{ base_url }}" itemprop="url"><span><i class="icon-circle-left"></i> {{ pages["index"].meta.title }}</span></a></h1>
 				</div>
@@ -84,9 +96,11 @@
 	</div>
 
 	<footer id="fh5co-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    {% if not meta.disclaimer %}
 		<p>
 			<small>&copy; <script>document.write( new Date().getFullYear() );</script> {{ pages["index"].meta.author }}. All Rights Reserverd. Brought to you by <a href="https://github.com/scubajeff/lespas#readme" target="_blank" itemprop="designer">Les Pas <i class="icon-lespas_color"></i></a> <br> Theme based on original designe from <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a>, developed by: <a href="http://besrourms.github.io/" target="_blank" itemprop="creator">Safouan</a> and others.</small>
 		</p>
+    {% endif %}
 	</footer>
 
 	<!-- jQuery -->

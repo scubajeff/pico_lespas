@@ -69,9 +69,11 @@
 	</div>
 
 	<footer id="fh5co-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    {% if not meta.disclaimer %}
 		<p>
 			<small>&copy; <script>document.write( new Date().getFullYear() );</script> {{ meta.author }}. All Rights Reserverd.  Brought to you by <a href="https://github.com/scubajeff/lespas#readme" target="_blank" itemprop="designer">Les Pas <i class="icon-lespas_color"></i></a> <br> Theme based on original designe from <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a>, developed by : <a href="http://besrourms.github.io/" target="_blank" itemprop="creator">Safouan Besrour</a> and others.</small>
 		</p>
+    {% endif %}
 	</footer>
 
 	<!-- jQuery -->

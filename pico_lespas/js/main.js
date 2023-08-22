@@ -54,9 +54,27 @@
 		});
 	};
 
+	var lightbox = function() {
+		var transform = function(){
+			var img = $(this)[0];
+			var parent = img.parentElement;
+			var link = document.createElement('a');
+			link.setAttribute("href", img.src);
+			link.setAttribute("data-lightbox", "images");
+			try { link.setAttribute("data-title", img.nextElementSibling.innerText); } catch {}
+			if (!link.getAttribute("data-title")) try { link.setAttribute("data-title", parent.nextElementSibling.innerText); } catch {}
+			if (!link.getAttribute("data-title")) try { link.setAttribute("data-title", parent.parentElement.nextElementSibling.innerText); } catch {}
+			if (!link.getAttribute("data-title")) try { link.setAttribute("data-title", img.alt.replace(/\.[a-zA-Z0-9]*$/,"")); } catch {}
+			parent.replaceChild(link, img);
+			link.appendChild(img);
+		};
+		$('body.single .fh5co-item .img-responsive, body.single .row .img-responsive, body.single .cd-timeline .img-responsive').each(transform);
+	}
+
 	// Document on load.
 	$(function(){
 
+		lightbox();
 		// Animations
 		contentWayPoint();
 		pauseVideoOutsideViewport();

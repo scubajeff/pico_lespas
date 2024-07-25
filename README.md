@@ -31,3 +31,4 @@ Due to security reason, Pico CMS team won't provide API for non-admin user to in
 4. Scroll to Custom themes section, you will see `pico_lespas` in the theme list now, if not, hit the refresh button. Click the '+' button to add `pico_lespas` theme
 5. **Done!** You can now go back to Les Pas app and start blogging.
 6. You should go through all the instructions on Pico's console page too, there are some other configurations you might like to take care, like the website short URL etc. If you do follow the website short URL instruction and you are using Apache, please make sure you enable `proxy` and `proxy_http` modules too, or web server will throw `500` error.
+7. As Les Pas store all pico related files in a hidden folder in Les Pas's home folder, if you are using Apache as your web server, make sure file access to hidden folder is allowed. Refer to this [issue](https://github.com/scubajeff/pico_lespas/issues/5) for detail instruction.
